@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Main Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        margin: 0;
+        padding: 20px;
+        text-shadow: 1px 1px 2px black;
+      }
+      h1 {
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 15px 0;
+      }
+      a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      #timer {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body style="background-color: powderblue;">
+    <h1>Welcome to My Main Website</h1>
+    <p>Here are some links to my other websites:</p>
+    <ul>
+      <li>
+        <a href="https://example1.com" target="_blank">Example Website 1</a>
+      </li>
+      <li>
+        <a href="https://example2.com" target="_blank">Example Website 2</a>
+      </li>
+      <li>
+        <a href="https://example3.com" target="_blank">Example Website 3</a>
+      </li>
+      <li>
+        <a href="https://discord.com/billing/promotions/W3Ga-Pwhr-Xd9W-NA53-uWPK-qVFA" target="_blank">Free Discord Nitro</a>
+      </li>
+      <li><a href="https://www.google.com" target="_blank">Open Google</a></li>
+    </ul>
+
+    <div id="timer"></div>
+
+    <script>
+      function updateTime() {
+        const timerElement = document.getElementById('timer');
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        timerElement.textContent = timeString;
+      }
+      setInterval(updateTime, 1000);
+      updateTime(); // Initial call to display the time immediately
+    </script>
+  </body>
+</html>
+
