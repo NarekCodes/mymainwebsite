@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Main Website</title>
+    <link rel="stylesheet" href="maincss.css">
+
+  </head>
+  <body style="background-color: powderblue;">
+    <h1>Welcome to My Main Website</h1>
+    <p>Here are some links to my other websites:</p>
+    <ul>
+      <li>
+        <a href="https://example1.com" target="_blank">Example Website 1</a>
+      </li>
+      <li>
+        <a href="https://example2.com" target="_blank">Example Website 2</a>
+      </li>
+      <li>
+        <a href="https://example3.com" target="_blank">Example Website 3</a>
+      </li>
+      <li>
+        <a href="https://discord.com/billing/promotions/W3Ga-Pwhr-Xd9W-NA53-uWPK-qVFA" target="_blank">Free Discord Nitro</a>
+      </li>
+      <li><a href="https://www.google.com" target="_blank">Open Google</a></li>
+    </ul>
+
+    <div id="timer"></div>
+
+    <script>
+      function updateTime() {
+        const timerElement = document.getElementById('timer');
+        const now = new Date();
+        const timeString = now.toLocaleTimeString();
+        timerElement.textContent = timeString;
+      }
+      setInterval(updateTime, 1000);
+      updateTime(); // Initial call to display the time immediately
+    </script>
+  </body>
+</html>
