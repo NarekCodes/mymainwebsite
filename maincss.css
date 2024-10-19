@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  text-shadow: 1px 1px 2px black;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin: 15px 0;
+}
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#timer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
