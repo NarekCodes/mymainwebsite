@@ -1,70 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-  </head>
-  <body style="background-color: antiquewhite;">
-    <center>
-      <tr>
-        <td>
-          <h1>Register</h1>
-        </td>
-      </tr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
 
-      <form action="action_page.php" method="POST">
-        <table>
-          <tr>
-            <td>Enter Gmail:</td>
-            <td>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="enter your gmail"
-                required
-              />
-            </td>
-          </tr>
-          <br />
-          <tr>
-            <td>Password:</td>
-            <td>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="password"
-                required
-                maxlength="12"
-              />
-            </td>
-          </tr>
-          <br />
-          <tr>
-            <td>Password:</td>
-            <td>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="Enter the same password"
-                required
-                maxlength="12"
-              />
-            </td>
-          </tr>
-          <br />
-          <tr>
-            <td>
-                <a href="mainweb.html" target="_blank"><input type="button" value="Submit" /></a>
+    <link rel="stylesheet" href="styles.css">
 
-            </td>
-           
-          </tr>
-        </table>
-      </form>
-    </center>
-  </body>
+</head>
+<body>
+    <div class="form">
+        <h1 class="heading">Register</h1>
+        <input type="text" placeholder="name" autocomplete="off" class="name" required>
+        <input type="email" placeholder="email" autocomplete="off" class="email" required>
+        <input type="password" placeholder="password" autocomplete="off" class="password" required>
+        <a href="mainweb.html" class="link">
+        <button class="submit-btn">register</button>
+        </a>
+        <a href="login.html" class="link">already have an account ? log in here</a>
+    </div>
+  
+    <script src="loser.js"></script>
+
+
+</body>
 </html>
